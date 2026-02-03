@@ -12,12 +12,13 @@
     <nav class="nav">
         <div class="nav-container">
             <a href="#" class="nav-logo">
-                <img src="https://github.com/MysticalMike.png" alt="MysticalMike GitHub avatar" class="nav-logo-img">
+                <span class="logo-text">ar</span>
             </a>
             <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="#projects" class="nav-link">Work</a></li>
                 <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
                 <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="#other" class="nav-link">Other</a></li>
             </ul>
             <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
                 <span class="nav-toggle-icon"></span>
@@ -28,10 +29,15 @@
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="container">
-            <h1 class="hero-title">Hi, I'm <span class="highlight">Your Name</span></h1>
-            <p class="hero-subtitle">Full Stack Developer</p>
-            <p class="hero-description">I build elegant and efficient solutions to complex problems.</p>
-            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">I'm Arnau Ros, a graphic designer & content creator based in Barcelona.</h1>
+                    <p class="hero-subtitle"><span class="underline">Available for freelance</span> & collaborations.</p>
+                </div>
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1611690037831-b4e1f0c8b5b4?w=600&h=600&fit=crop" alt="Hawk" class="bird-image">
+                </div>
+            </div>
         </div>
     </section>
 
@@ -41,16 +47,70 @@
             <h2 class="section-title">About Me</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>I'm a passionate developer with expertise in creating modern web applications. I love turning ideas into reality through clean, efficient code.</p>
-                    <p>With a strong foundation in both front-end and back-end technologies, I specialize in building scalable, user-friendly applications that solve real-world problems.</p>
-                    <div class="skills">
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">React</span>
-                        <span class="skill-tag">Node.js</span>
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">HTML/CSS</span>
-                        <span class="skill-tag">Git</span>
-                    </div>
+                    <p>I'm a product designer working on various projects for lots of clients. My skillset lies on creating branding packages & websites to deliver the full user experience for new and also veteran businesses.</p>
+                    <p>You can often find me creating videos about design work on YouTube, or sharing my thoughts on my podcast, Dialogue With Designers. I'm passionate about giving back and teaching what I know to the next generation of designers.</p>
+                </div>
+                <div class="about-services">
+                    <h3 class="services-title">Your one stop shop for:</h3>
+                    
+                    <!-- Expandable Service 1 -->
+                    <details class="service-item">
+                        <summary class="service-header">
+                            <span class="service-number">①</span>
+                            <span class="service-name">Branding / Logo</span>
+                            <span class="service-icon">+</span>
+                        </summary>
+                        <div class="service-content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pulvinar rutrum tempor. Etiam vel ex sit amet erat molestie dignissim. Sed pulvinar rutrum tempor. Etiam duis massa elem Starting at €2,450</p>
+                        </div>
+                    </details>
+                    
+                    <!-- Expandable Service 2 -->
+                    <details class="service-item">
+                        <summary class="service-header">
+                            <span class="service-number">②</span>
+                            <span class="service-name">Packaging</span>
+                            <span class="service-icon">+</span>
+                        </summary>
+                        <div class="service-content">
+                            <p>Custom packaging design services for your product line.</p>
+                        </div>
+                    </details>
+                    
+                    <!-- Expandable Service 3 -->
+                    <details class="service-item">
+                        <summary class="service-header">
+                            <span class="service-number">③</span>
+                            <span class="service-name">Websites</span>
+                            <span class="service-icon">+</span>
+                        </summary>
+                        <div class="service-content">
+                            <p>Full-service website design and development.</p>
+                        </div>
+                    </details>
+                </div>
+            </div>
+            
+            <!-- Tools Section -->
+            <div class="tools-section">
+                <div class="tools-list">
+                    <span class="tool-item">Illustrator</span>
+                    <span class="tool-separator">•</span>
+                    <span class="tool-item">Webflow</span>
+                    <span class="tool-separator">•</span>
+                    <span class="tool-item">Figma</span>
+                    <span class="tool-separator">•</span>
+                    <span class="tool-item">Indesign</span>
+                    <span class="tool-separator">•</span>
+                    <span class="tool-item">Premiere Pro</span>
+                    <span class="tool-separator">•</span>
+                    <span class="tool-item">Cinema 4D</span>
+                    <span class="tool-separator">•</span>
+                    <span class="tool-item">Sketch</span>
+                    <span class="tool-separator">•</span>
+                    <span class="tool-item">Photoshop</span>
+                    <span class="tool-separator">•</span>
+                    <span class="tool-item">Illustrator</span>
                 </div>
             </div>
         </div>
@@ -60,126 +120,63 @@
     <section class="projects" id="projects">
         <div class="container">
             <h2 class="section-title">Projects</h2>
-            <div class="projects-grid">
+            <div class="projects-carousel">
+                <button class="carousel-btn carousel-prev" aria-label="Previous project">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M15 18l-6-6 6-6"/>
+                    </svg>
+                </button>
                 
-                <!-- Project 1 -->
-                <article class="project-card">
-                    <div class="project-content">
-                        <h3 class="project-title">Project Name</h3>
-                        <p class="project-description">A brief description of the project explaining what it does and why it's useful. This should be concise but informative.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">MongoDB</span>
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <article class="project-card">
+                        <div class="project-number">01 Example</div>
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800&h=1000&fit=crop" alt="Project 1">
                         </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">
-                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                    <polyline points="15 3 21 3 21 9"></polyline>
-                                    <line x1="10" y1="14" x2="21" y2="3"></line>
-                                </svg>
-                                Live Demo
-                            </a>
-                            <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">
-                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                                </svg>
-                                GitHub
-                            </a>
-                        </div>
-                    </div>
-                </article>
+                    </article>
 
-                <!-- Project 2 -->
-                <article class="project-card">
-                    <div class="project-content">
-                        <h3 class="project-title">Another Project</h3>
-                        <p class="project-description">Description of another interesting project that showcases different skills and technologies.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Django</span>
-                            <span class="tech-tag">PostgreSQL</span>
+                    <!-- Project 2 -->
+                    <article class="project-card">
+                        <div class="project-number">02 Example</div>
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1557672172-298e090bd0f1?w=800&h=1000&fit=crop" alt="Project 2">
                         </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">
-                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                    <polyline points="15 3 21 3 21 9"></polyline>
-                                    <line x1="10" y1="14" x2="21" y2="3"></line>
-                                </svg>
-                                Live Demo
-                            </a>
-                            <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">
-                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                                </svg>
-                                GitHub
-                            </a>
-                        </div>
-                    </div>
-                </article>
+                    </article>
 
-                <!-- Project 3 -->
-                <article class="project-card">
-                    <div class="project-content">
-                        <h3 class="project-title">Third Project</h3>
-                        <p class="project-description">Yet another project demonstrating expertise in different areas of development and problem-solving.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">Vue.js</span>
-                            <span class="tech-tag">Firebase</span>
+                    <!-- Project 3 -->
+                    <article class="project-card">
+                        <div class="project-number">03 Example</div>
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1618172193763-c511deb635ca?w=800&h=1000&fit=crop" alt="Project 3">
                         </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">
-                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                    <polyline points="15 3 21 3 21 9"></polyline>
-                                    <line x1="10" y1="14" x2="21" y2="3"></line>
-                                </svg>
-                                Live Demo
-                            </a>
-                            <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">
-                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                                </svg>
-                                GitHub
-                            </a>
-                        </div>
-                    </div>
-                </article>
+                    </article>
+                </div>
 
+                <button class="carousel-btn carousel-next" aria-label="Next project">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 18l6-6-6-6"/>
+                    </svg>
+                </button>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
+    <!-- Newsletter Section -->
+    <section class="newsletter" id="newsletter">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <p class="contact-description">I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
-            <div class="contact-methods">
-                <a href="mailto:your.email@example.com" class="contact-method">
-                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                        <polyline points="22,6 12,13 2,6"></polyline>
-                    </svg>
-                    <span>your.email@example.com</span>
-                </a>
-                <a href="https://github.com/yourusername" class="contact-method" target="_blank" rel="noopener noreferrer">
-                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                    </svg>
-                    <span>github.com/yourusername</span>
-                </a>
-                <a href="https://linkedin.com/in/yourprofile" class="contact-method" target="_blank" rel="noopener noreferrer">
-                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                        <rect x="2" y="9" width="4" height="12"></rect>
-                        <circle cx="4" cy="4" r="2"></circle>
-                    </svg>
-                    <span>linkedin.com/in/yourprofile</span>
-                </a>
+            <div class="newsletter-content">
+                <h2 class="newsletter-title">Join the Newsletter!</h2>
+                <p class="newsletter-description">You'll receive an email every once in a while about new products, courses, and videos!</p>
+                <form class="newsletter-form">
+                    <input type="email" class="newsletter-input" placeholder="name@example.com" required>
+                    <button type="submit" class="newsletter-submit" aria-label="Subscribe">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </button>
+                </form>
+                <p class="newsletter-privacy">We'll never share your details. <a href="#" class="privacy-link">Privacy Policy</a></p>
             </div>
         </div>
     </section>
@@ -187,8 +184,33 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Portfolio. All rights reserved.</p>
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">ar</span>
+                </div>
+                <div class="footer-text">
+                    <p>&copy; 2025 Arnau Ros, LLC All rights reserved</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://facebook.com" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                    </a>
+                    <a href="https://twitter.com" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                        </svg>
+                    </a>
+                    <a href="https://instagram.com" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
         </div>
+    </footer>
     </footer>
 
     <script src="script.js"></script>
