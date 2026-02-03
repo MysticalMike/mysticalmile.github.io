@@ -152,7 +152,17 @@ a:hover {
     transition: transform var(--transition-fast);
 }
 
-.nav-logo:hover .logo-text {
+.nav-logo .logo-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid var(--color-text);
+    transition: transform var(--transition-fast);
+    object-fit: cover;
+}
+
+.nav-logo:hover .logo-text,
+.nav-logo:hover .logo-avatar {
     transform: rotate(180deg);
 }
 
@@ -560,6 +570,14 @@ details[open] .service-icon {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.footer-logo .logo-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid var(--color-text);
+    object-fit: cover;
 }
 
 .footer-text {
